@@ -35,11 +35,15 @@ Project a latitude / longitude (in degrees).
 
 Returns an object with `x` and `y` properties.
 
-Aside: I *think* this conversion uses a unit sphere (TODO confirm this).
+**Note**: this uses a unit spheroid, equivalent to using cs2cs with the
+following parameters (note `+a=1` and `+b=1`).
+
+    +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs +to 
+    +proj=robin +lon_0=0 +x_0=0 +y_0=0 +a=1 +b=1 +units=m +no_defs
 
 ### Robinson.unproject(x, y) -> LatLng
 
-Unproject an x / y point.
+Unproject an x / y point - the reverse of `Robinson.project`.
 
 Returns an object with lat and lng properties.
 

@@ -4,6 +4,7 @@ var vows = require('vows'),
     fs = require('fs'),
     Robinson = require('../pj_robin');
 
+/* Read space-separated floats from a text file */
 function readData(filename, callback) {
   fs.readFile(filename, 'utf8', function(err, data) {
     if(err)
@@ -16,6 +17,7 @@ function readData(filename, callback) {
   });
 }
 
+/* Test that output from Robinson.project roughly matches that of cs2cs */
 vows.describe('Output matches cs2cs').addBatch({
   'projecting data': {
     topic: function() {
