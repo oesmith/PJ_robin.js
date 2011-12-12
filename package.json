@@ -1,0 +1,16 @@
+{
+  "name": "pj_robin",
+  "version": "0.1.0",
+  "description": "Robinson projection library, port of PJ_robin.c from PROJ.4",
+  "author": "Olly Smith <olly.smith@gmail.com>",
+  "keywords": ["proj","projection","robinson"],
+  "repositories": [
+       {
+            "type": "git", 
+            "url": "https://github.com/oesmith/PJ_robin.js.git",
+       }
+  ],
+  "main": "pj_robin.js",
+  "homepage": "https://github.com/oesmith/PJ_robin.js",
+  "engine": "node >= 0.4.1"
+}

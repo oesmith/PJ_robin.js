@@ -1,18 +1,18 @@
-# PJ_robin.js
+# pj_robin.js
 
-Javascript port of PJ_robin.c from PROJ.4 (v4.7.0).  Use it to make 
-less-stretchified (but bendy around the edges) global interactive slippy
-maps :)
+Robinson projection library - javascript port of PJ_robin.c from PROJ.4
+(v4.7.0).  Use it to make less-stretchified (but bendy around the edges)
+global interactive slippy maps :)
 
 ## Node.js usage
 
 Install using `npm`.
 
-    npm install PJ_robin
+    npm install pj_robin
 
 Frivolous example code:
 
-    var Robinson = require('PJ_robin'),
+    var Robinson = require('pj_robin'),
         pt = Robinson.project(51.507222, -0.1275);
     console.log("London is at x:"+pt.x+" y:"+pt.y);
 
@@ -21,7 +21,7 @@ Frivolous example code:
 Use the minified javascript file (which can be rebuilt using the included
 Makefile).
 
-    <script src='PJ_robin.min.js'></script>
+    <script src='pj_robin.min.js'></script>
     <script>
         var pt = Robinson.project(51.507222, -0.1275);
         alert("London is at x:"+pt.x+" y:"+pt.y);

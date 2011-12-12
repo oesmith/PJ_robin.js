@@ -1,7 +1,7 @@
-all: PJ_robin.min.js
+all: pj_robin.min.js
 
 clean:
-	rm -f PJ_robin.min.js
+	rm -f pj_robin.min.js
 
 distclean: clean
 	rm -f compiler.jar
@@ -9,5 +9,5 @@ distclean: clean
 compiler.jar:
 	curl http://closure-compiler.googlecode.com/files/compiler-latest.tar.gz | tar xz compiler.jar
 
-PJ_robin.min.js: compiler.jar
-	java -jar compiler.jar --js PJ_robin.js --js_output_file PJ_robin.min.js
+pj_robin.min.js: compiler.jar
+	java -jar compiler.jar --js pj_robin.js --js_output_file pj_robin.min.js
