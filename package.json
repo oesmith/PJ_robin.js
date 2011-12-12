@@ -12,5 +12,9 @@
   ],
   "main": "pj_robin.js",
   "homepage": "https://github.com/oesmith/PJ_robin.js",
-  "engine": "node >= 0.4.1"
+  "engine": "node >= 0.4.1",
+  "devDependencies": {
+    "vows": "0.6.x",
+    "async": "0.1.15"
+  }
 }
