@@ -29,22 +29,22 @@ Makefile).
 
 ## API reference
 
-- Robinson.project(lat, lng) -> Point
+### Robinson.project(lat, lng) -> Point
 
-  Project a latitude / longitude (in degrees).
+Project a latitude / longitude (in degrees).
 
-  Returns an object with `x` and `y` properties.
+Returns an object with `x` and `y` properties.
 
-  Aside: I *think* this conversion uses a unit sphere (TODO confirm this).
+Aside: I *think* this conversion uses a unit sphere (TODO confirm this).
 
-- Robinson.unproject(x, y) -> LatLng
+### Robinson.unproject(x, y) -> LatLng
 
-  Unproject an x / y point.
+Unproject an x / y point.
 
-  Returns an object with lat and lng properties.
+Returns an object with lat and lng properties.
 
-- Robinson.remap(pt) -> Point
+### Robinson.remap(pt) -> Point
 
-  Re-map a projected point to 0 <= x/y < 1 range.
+Re-map a projected point to 0 <= x/y < 1 range.
 
-  (useful for operations on square map tiles)
+(useful for operations on square map tiles)
